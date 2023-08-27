@@ -1,22 +1,19 @@
-# ccx-rpc
+# yyn-rpc
 
 #### 介绍
 这是一个基于 Netty + Zookeeper + Protostuff 的简易 RPC 框架。
 造轮子主要是为了学习，因为我觉得"会用"、"会读源码"、"会写出来"是完全不一样的水平。
 
-Github: https://github.com/chenchuxin/ccx-rpc
+Github: https://github.com/chenchuxin/yyn-rpc
 
-Gitee: https://gitee.com/imccx/ccx-rpc
-
-更多详细教程请看：https://www.cnblogs.com/chenchuxin/category/2010813.html
 
 #### 目录
 以下是重要的包的简介：
 ```
-|- ccx-rpc-common：基础的代码
+|- yyn-rpc-common：基础的代码
   |- extendsion：扩展，主要实现了一套自己的 SPI，参考 dubbo，做了简化
   |- url: 同样也是参考 dubbo 的 URL，一般是构建参数用的
-|- ccx-rpc-core: rpc 核心逻辑
+|- yyn-rpc-core: rpc 核心逻辑
   |- annotation：里面包含了一些自定义的注解，例如 @RpcService(服务提供)、@RpcReference(服务引用)
   |- compress: 压缩，网络传输需要压缩数据
   |- config: 定义了一套配置的接口，例如配置服务绑定的端口，zk 的地址等
@@ -27,9 +24,9 @@ Gitee: https://gitee.com/imccx/ccx-rpc
   |- remoting: 网络相关的东西，例如自定义协议、Netty 收发请求等
   |- serialize: 序列化，网络传输，序列化是必不可少了
   |- spring: 一些 spring 相关的东西，例如扫描器、bean 的处理
-|- ccx-rpc-demo: 框架的使用例子
-  |- ccx-rpc-demo-client: 客户端，服务引用方
-  |- ccx-rpc-demo-service: 服务提供方
+|- yyn-rpc-demo: 框架的使用例子
+  |- yyn-rpc-demo-client: 客户端，服务引用方
+  |- yyn-rpc-demo-service: 服务提供方
 ```
 
 #### 功能列表
@@ -74,8 +71,8 @@ Gitee: https://gitee.com/imccx/ccx-rpc
 #### 运行
 1. 环境要求：JDK8 以上、Lombok 插件
 2. 需要安装 `Zookeeper` 并运行
-3. 修改配置文件 `ccx-rpc.properties` 中的 zk 地址、监听端口，启动服务 `com.ccx.rpc.demo.service.ServiceBootstrap`
-4. 修改配置文件 `ccx-rpc.properties` 中的 zk 地址，启动客户端 `com.ccx.rpc.demo.client.ClientBootstrap`
+3. 修改配置文件 `yyn-rpc.properties` 中的 zk 地址、监听端口，启动服务 `com.yyn.rpc.demo.service.ServiceBootstrap`
+4. 修改配置文件 `yyn-rpc.properties` 中的 zk 地址，启动客户端 `com.yyn.rpc.demo.client.ClientBootstrap`
 5. 访问客户端地址 `http://localhost:8864/user/1` 就可以啦. `http://localhost:8864/user/v2/1` 可以访问另一个实现，这是多版本功能。
 
 #### 参与贡献
