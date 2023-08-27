@@ -15,6 +15,7 @@ import java.util.Map;
  */
 @Builder
 @Getter
+//protocol://username:password@host:port/path?key1=value1&key2=value2
 public class URL {
     /**
      * 协议
