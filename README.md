@@ -4,7 +4,7 @@
 这是一个基于 Netty + Zookeeper + Protostuff 的简易 RPC 框架。
 造轮子主要是为了学习，因为我觉得"会用"、"会读源码"、"会写出来"是完全不一样的水平。
 
-Github: https://github.com/chenchuxin/yyn-rpc
+Github: https://github.com/youyunning/yyn-rpc
 
 
 #### 目录
