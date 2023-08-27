@@ -1,2 +1,0 @@
-json=com.ccx.rpc.demo.client.spi.JSONSerializer
-protostuff=com.ccx.rpc.demo.client.spi.ProtostuffSerializer

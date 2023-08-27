@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ccx</groupId>
-    <artifactId>ccx-rpc</artifactId>
+    <groupId>com.yyn</groupId>
+    <artifactId>yyn-rpc</artifactId>
     <version>${project.version}</version>
     <modules>
-        <module>ccx-rpc-core</module>
-        <module>ccx-rpc-common</module>
-        <module>ccx-rpc-demo</module>
+        <module>yyn-rpc-core</module>
+        <module>yyn-rpc-common</module>
+        <module>yyn-rpc-demo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -34,12 +34,12 @@
         <dependencies>
             <dependency>
                 <groupId>com.ccx</groupId>
-                <artifactId>ccx-rpc-common</artifactId>
+                <artifactId>yyn-rpc-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ccx</groupId>
-                <artifactId>ccx-rpc-core</artifactId>
+                <artifactId>yyn-rpc-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

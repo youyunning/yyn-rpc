@@ -1,2 +1,0 @@
-retry=com.ccx.rpc.core.faulttolerant.RetryInvoker
-fail-fast=com.ccx.rpc.core.faulttolerant.FailFastInvoker

@@ -1,2 +1,0 @@
-dummy=com.ccx.rpc.core.compress.DummyCompressor
-gzip=com.ccx.rpc.core.compress.GzipCompressor
